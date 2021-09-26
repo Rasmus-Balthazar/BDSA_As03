@@ -1,9 +1,11 @@
 using System;
 using Xunit;
+
 using System.Collections.Generic;
 using System.Linq;
 
 namespace BDSA2021.Assignments03.Tests
+
 {
     public class ExtensionsTests
     {
