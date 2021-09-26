@@ -1,6 +1,6 @@
-﻿using System;
+using System;
 
-namespace Assignment3
+namespace BDSA2021.Assignments03
 {
     class Program
     {
