@@ -14,5 +14,6 @@ namespace BDSA2021.Assignments03
         public static bool IsSecure(this Uri u) => u.Scheme == Uri.UriSchemeHttps;
 
         public static int WordCount(this string s) => Regex.Matches(s, @"(?<word>[\S]+)").Count;
+
     }
 }

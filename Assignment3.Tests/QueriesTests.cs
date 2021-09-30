@@ -18,28 +18,28 @@ namespace BDSA2021.Assignments03.Tests
         }
 
         [Fact]
-        public void Test_FindTheYear_TheFirstSith_ContainingDarth_WasIntroduced()
+        public void Test_FindTheYear_TheFirstSith_StartingWithDarth_WasIntroduced()
         {
-        //Given
-        int? expected = 1977;
-        //When
-        var actual = Queries.FindYearOfFirstSith();
-        //Then
-        Assert.Equal(expected, actual);  
+            //Given
+            int? expected = 1977;
+            //When
+            var actual = Queries.FindYearOfFirstSith();
+            //Then
+            Assert.Equal(expected, actual);  
         }
 
         [Fact]
         public void Test_FindUniqueWizardsFromHPBooks_ReturnedAsTupleList()
         {
-        //Given
-        var expected = new List<(string name, int? year)>
-        {
-            ("Sirius Black", 1999)
-        }; 
-        //When
-        var actual = Queries.FindUniqueWizardsFromHarryPotter();
-        //Then
-        Assert.Equal(expected, actual);
+            //Given
+            var expected = new List<(string name, int? year)>
+            {
+                ("Sirius Black", 1999)
+            }; 
+            //When
+            var actual = Queries.FindUniqueWizardsFromHarryPotter();
+            //Then
+            Assert.Equal(expected, actual);
         }
     }
 }

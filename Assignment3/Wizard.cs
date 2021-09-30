@@ -23,8 +23,6 @@ namespace BDSA2021.Assignments03
             var csv = File.OpenText("../../../../Wizards.csv");
             using var reader = new CsvReader(csv, CultureInfo.InvariantCulture);
             return reader.GetRecords<Wizard>().ToList().AsReadOnly();
-        });
-
-        
+        });        
     }
 }
