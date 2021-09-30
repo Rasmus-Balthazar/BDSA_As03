@@ -15,11 +15,12 @@ namespace BDSA2021.Assignments03
             select w.Name;
         }
 
+
         public static IEnumerable<string> FindWizardsByAuthor(string author, IEnumerable<Wizard> wizards)
         {
             return wizards.Where(wizard => wizard.Creator.Equals(author)).Select(wizard => wizard.Name);
         }
-
+      
         public static int? FindYearOfFirstSith()
         {
             var wizards = Wizard.Wizards.Value;
@@ -31,6 +32,7 @@ namespace BDSA2021.Assignments03
 
             return sorted.FirstOrDefault();
         }
+
 
         public static int? FindYearOfFirstSith(IEnumerable<Wizard> wizards)
         {
