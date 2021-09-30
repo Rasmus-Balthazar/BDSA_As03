@@ -18,7 +18,7 @@ namespace BDSA2021.Assignments03.Tests
         }
 
         [Fact]
-        public void Test_FindTheYear_TheFirstSith_ContainingDarth_WasIntroduced()
+        public void Test_FindTheYear_TheFirstSith_StartingWithDarth_WasIntroduced()
         {
         //Given
         int? expected = 1977;
